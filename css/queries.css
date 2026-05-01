@@ -1,0 +1,43 @@
+
+@media (width > 680px) {
+  @layer layout {
+    .jobs-container {
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+    }
+    .job {
+        flex-direction: row;
+        max-width: none;
+        align-items: center;
+    }
+    .job .company-logo {
+      position: static;
+      width: 7rem;
+      height: 7rem;
+      transform: translateY(0%);
+    }
+    .job .job-info{
+        min-width: 25.6rem;
+    }
+    .tags {
+      align-items: center;
+      margin-left: auto;
+    }
+  }
+
+  @layer components {
+    header{
+        background-image: url(../images/bg-header-desktop.svg);
+    }
+    .job .job-details {
+      padding: 0;
+      border-bottom: none;
+    }
+  }
+}
+@media (width > 992px) {
+.filters-panel, .jobs-container{
+  padding-inline: 10%;
+}
+}
